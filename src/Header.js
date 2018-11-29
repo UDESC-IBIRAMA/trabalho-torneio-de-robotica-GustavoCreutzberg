@@ -11,7 +11,9 @@ class Header extends Component {
                         <li><Link exact to='/'>Home</Link></li>
                         <li><Link to='/produtos'>cadastros de Produtos</Link></li>
                         <li><Link to='/Pessoas'>Cadastros de Pessoas</Link></li>
-                        <li><Link to='/equipes'>Cadastros de Equipes</Link></li>
+                        <li><Link to='/Equipes'>Cadastros de Equipes</Link></li>
+                        <li><Link to='/Integrante'>Cadastros de Integrante</Link></li>
+                        <li><Link to='/Juiz'>Cadastros de Juiz</Link></li>
                     </ul>
                 </nav>
             </header>
