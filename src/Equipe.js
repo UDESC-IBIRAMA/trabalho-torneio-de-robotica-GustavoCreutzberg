@@ -21,7 +21,7 @@ class CadastroEquipe extends React.Component {
         const nome = document.getElementById ( 'equipe-nome' );
         const integrantes = document.getElementById ( 'equipe-integrantes' );
         const competicao = document.getElementById ( 'equipe-competicao' );
-        fetch('http://127.0.0.1:8080/equipes', {
+        fetch('http://127.0.0.1:8080/equipe', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',

@@ -1,27 +1,27 @@
 import React, { Component } from 'react';
 
-class Temporada extends Component {
+class Arena extends Component {
     render() {
 
         return (
             <div>
-                <CadastroTemporada />
+                <CadastroArena />
             </div>
         )
     }
 }
 
-class CadastroTemporada extends React.Component {
+class CadastroArena extends React.Component {
     constructor(props) {
         super(props);
         this.handleSalvar = this.handleSalvar.bind(this);
     }
 
     handleSalvar(){
-        const nome = document.getElementById ( 'temporada-nome' );
-        const descricao = document.getElementById ( 'temporada-descricao' );
+        const nome = document.getElementById ( 'arena-nome' );
+        const arena = document.getElementById ( 'arena-categoria' );
         
-        fetch('http://127.0.0.1:8080/temporada', {
+        fetch('http://127.0.0.1:8080/arena', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -30,26 +30,26 @@ class CadastroTemporada extends React.Component {
             body: JSON.stringify({
                 "id":"",
                 "nome":nome.value,
-                "descricao":descricao.value
+                "categoria":categoria.value
             })
         })
     }
 
     render(){
         return (
-            <form id="temporada-form">
-                <label>Temporada:</label>
+            <form id="arena-form">
+                <label>Arena:</label>
                 <input
-                    id="temporada-nome"
+                    id="arena-nome"
                     type="text"
                     name="nome"
                 />
                 <br/>
-                <label>Descrição:</label>
+                <label>Categoria:</label>
                 <input
-                    id="temporada-temporada"
+                    id="arena-categoria"
                     type="text"
-                    name="temporada"
+                    name="categoria"
                 />
                 <button onClick={this.handleSalvar}>
                     Salvar
@@ -60,4 +60,4 @@ class CadastroTemporada extends React.Component {
     }
 }
 
-export default Temporada;
+export default Arena;

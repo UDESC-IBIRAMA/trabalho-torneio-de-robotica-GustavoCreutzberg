@@ -15,7 +15,7 @@ class Header extends Component {
                         <li><Link to='/Integrante'>Cadastros de Integrante</Link></li>
                         <li><Link to='/Juiz'>Cadastros de Juiz</Link></li>
                         <li><Link to='/Temporada'>Cadastros de Temporada</Link></li>
-                        
+                        <li><Link to='/Arena'>Cadastros de Arena</Link></li>
                     </ul>
                 </nav>
             </header>

@@ -6,6 +6,7 @@ import Equipe from "./Equipe";
 import Integrante from './Integrante';
 import Juiz from './Juiz';
 import Temporada from './Temporada';
+import Arena from './Arena';
 
 class Principal extends Component {
     render(){
@@ -18,6 +19,7 @@ class Principal extends Component {
                 <Route path='/integrante' component={Integrante} />
                 <Route path='/juiz' component={Juiz} />
                 <Route path='/temporada' component={Temporada} />
+                <Route path='/arena' component={Arena} />
             </Switch>
         )
     }
