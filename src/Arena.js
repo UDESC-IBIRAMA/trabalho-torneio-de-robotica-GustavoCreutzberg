@@ -19,7 +19,7 @@ class CadastroArena extends React.Component {
 
     handleSalvar(){
         const nome = document.getElementById ( 'arena-nome' );
-        const arena = document.getElementById ( 'arena-categoria' );
+        const categoria = document.getElementById ( 'arena-categoria' );
         
         fetch('http://127.0.0.1:8080/arena', {
             method: 'POST',
