@@ -26,7 +26,8 @@ class Principal extends Component {
 }
 const Home = () => (
     <div>
-        <h1>Bem vindo ao sistema!</h1>
+        <h1>Trabalho de Competiçao de Robotica!</h1>
+        <h5>Por Kleiton Bonin e Gustavo Roger Creutzberg</h5>
     </div>
 )
 

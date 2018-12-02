@@ -6,7 +6,7 @@ class Header extends Component {
     render() {
         return (
             <header>
-                <nav>
+                <nav id="menu">
                     <ul>
                         <li><Link exact to='/'>Home</Link></li>
                         <li><Link to='/Equipes'>Cadastros de Equipes</Link></li>
