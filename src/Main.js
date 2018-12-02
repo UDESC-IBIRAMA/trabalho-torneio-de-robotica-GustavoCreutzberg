@@ -7,6 +7,7 @@ import Temporada from './Temporada';
 import Arena from './Arena';
 import Competicao from './Competicao';
 import SalaAvaliacao from './SalaAvaliacao';
+import Game from './Game';
 
 class Principal extends Component {
     render(){
@@ -20,6 +21,7 @@ class Principal extends Component {
                 <Route path='/arena' component={Arena} />
                 <Route path='/competicao' component={Competicao} />
                 <Route path='/salaavaliacao' component={SalaAvaliacao} />
+                <Route path='/Game' component={Game} />
             </Switch>
         )
     }

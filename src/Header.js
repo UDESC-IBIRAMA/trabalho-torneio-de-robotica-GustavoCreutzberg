@@ -16,6 +16,7 @@ class Header extends Component {
                         <li><Link to='/Arena'>Cadastros de Arena</Link></li>
                         <li><Link to='/Competicao'>Cadastros de Competição</Link></li>
                         <li><Link to='/SalaAvaliacao'>Cadastros de Sala de Avaliação</Link></li>
+                        <li><Link to='/Game'>Game</Link></li>
                     </ul>
                 </nav>
             </header>
